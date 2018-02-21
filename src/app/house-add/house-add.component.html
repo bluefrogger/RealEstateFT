@@ -8,5 +8,69 @@
       <label for="house-mls">House MLS:</label>
       <input #houseMls type="text" name="house-mls" placeholder="mls">
     </p>
-    <button (click)="clickAdd(houseName.value, houseMls.value)">Add House</button>
+    <p>
+      <label for="house-street1">House Street1:</label>
+      <input #houseStreet1 type="text" name="house-street1" placeholder="street1">
+    </p>
+    <p>
+      <label for="house-street2">House Street2:</label>
+      <input #houseStreet2 type="text" name="house-street2" placeholder="street2">
+    </p>
+    <p>
+      <label for="house-city">House City:</label>
+      <input #houseCity type="text" name="house-city" placeholder="city">
+    </p>
+    <p>
+      <label for="house-state">House State:</label>
+      <input #houseState type="text" name="house-state" placeholder="state">
+    </p>
+    <p>
+      <label for="house-zipcode">House Zipcode:</label>
+      <input #houseZipcode type="text" name="house-zipcode" placeholder="zipcode">
+    </p>
+    <p>
+      <label for="house-neighborhood">House Neighborhood:</label>
+      <input #houseNeighborhood type="text" name="house-neighborhood" placeholder="neighborhood">
+    </p>
+    <p>
+      <label for="house-sales-price">House Sales Price:</label>
+      <input #houseSalesPrice type="text" name="house-sales-price" placeholder="salesPrice">
+    </p>
+    <p>
+      <label for="house-date-listed">House Date Listed:</label>
+      <input #houseDateListed type="text" name="house-date-listed" placeholder="dateListed">
+    </p>
+    <p>
+      <label for="house-bedrooms">House Bedrooms:</label>
+      <input #houseBedrooms type="text" name="house-bedrooms" placeholder="bedrooms">
+    </p>
+    <p>
+      <label for="house-photos">House Photos:</label>
+      <input #housePhotos type="text" name="house-photos" placeholder="photos">
+    </p>
+    <p>
+      <label for="house-bathrooms">House Bathrooms:</label>
+      <input #houseBathrooms type="text" name="house-bathrooms" placeholder="bathrooms">
+    </p>
+    <p>
+      <label for="house-garage-size">House Garage Size:</label>
+      <input #houseGarageSize type="text" name="house-garage-size" placeholder="garageSize">
+    </p>
+    <p>
+      <label for="house-square-feet">House Square Feet:</label>
+      <input #houseSquareFeet type="text" name="house-square-feet" placeholder="squareFeet">
+    </p>
+    <p>
+      <label for="house-lot-size">House Lot Size:</label>
+      <input #houseLotSize type="text" name="house-lot-size" placeholder="lotSize">
+    </p>
+    <p>
+      <label for="house-description">House Description:</label>
+      <input #houseDescription type="text" name="house-Description" placeholder="Description">
+    </p>
+    <button (click)="clickAdd(houseName.value, houseMls.value, houseStreet1.value,
+      houseStreet2.value, houseCity.value, houseState.value, houseZipcode.value,
+      houseNeighborhood.value, houseSalesPrice.value, houseDateListed.value,
+      houseBedrooms.value, housePhotos.value, houseBathrooms.value, houseGarageSize.value,
+      houseSquareFeet.value, houseLotSize.value, houseDescription.value)">Add House</button>
 </section>

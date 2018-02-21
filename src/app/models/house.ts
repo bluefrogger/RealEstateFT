@@ -8,9 +8,9 @@ export class House {
     zipcode: number;
     neighborhood: string;
     salesPrice: number;
-    dateListed: Date;
+    dateListed: string;
     bedrooms: number;
-    photos: {src: string, alt: string};
+    photos: string;
     bathrooms: number;
     garageSize: number;
     squareFeet: number;
