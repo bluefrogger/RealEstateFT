@@ -1,0 +1,12 @@
+<h1>Add House</h1>
+<section>
+    <p>
+      <label for="house-name">House Name:</label>
+      <input #houseName type="text" name="house-name" placeholder="name">
+    </p>
+    <p>
+      <label for="house-mls">House MLS:</label>
+      <input #houseMls type="text" name="house-mls" placeholder="mls">
+    </p>
+    <button (click)="clickAdd(houseName.value, houseMls.value)">Add House</button>
+</section>

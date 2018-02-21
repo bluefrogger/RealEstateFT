@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+main {
+    position: relative;
+    left: 50%;
+    width: 100%;
+}

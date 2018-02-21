@@ -1,0 +1,14 @@
+<h1>My Houses</h1>
+<ul class="houses">
+    <li *ngFor="let house of houses">
+      <div *ngIf="selectedHouse!==house">
+          <app-house-detail [house]="house"></app-house-detail>
+      </div>
+      <div *ngIf="selectedHouse==house">
+          <app-house-edit [house]="house"></app-house-edit>
+      </div>
+      <button (click)="onEdit(house)">Edit</button>
+      <button (click)="onDelete(house)">Delete</button>
+    </li>
+</ul>
+<app-house-add (houseAdded)="onAdd($event)"></app-house-add>

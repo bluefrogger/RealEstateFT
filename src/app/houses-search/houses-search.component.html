@@ -1,0 +1,45 @@
+<section>
+  <h1>Search Houses</h1>
+  <p>
+      <label for="input-mls">MLS:</label>
+      <input #inputMls name="input-mls" type="number" (keyup)="searchMls(inputMls.value)">
+  </p>
+  <p>
+    <label for="input-city">City:</label>
+    <input #inputCity name="input-city" type="text" (keyup)="searchCity(inputCity.value)">
+  </p>
+  <p>
+    <label for="input-state">State:</label>
+    <input #inputState name="input-state" type="text" (keyup)="searchState(inputState.value)">
+  </p>
+  <p>
+    <label for="input-zipcode">Zipcode:</label>
+    <input #inputZipcode name="input-zipcode" type="number" (keyup)="searchZipcode(inputZipcode.value)">
+  </p>
+  <p>
+    <label for="input-bedrooms">Bedrooms:</label>
+    <input #inputBedrooms name="input-bedrooms" type="number" (keyup)="searchBedrooms(inputBedrooms.value)">
+  </p>
+  <p>
+    <label for="input-bathrooms">Bathrooms:</label>
+    <input #inputBathrooms name="input-bathrooms" type="number" (keyup)="searchBathrooms(inputBathrooms.value)">
+  </p>
+  <p>
+    <label for="input-square-feet">Square Feet:</label>
+    <input #inputSquareFeet name="input-square-feet" type="number" (keyup)="searchSquareFeet(inputSquareFeet.value)">
+  </p>
+</section>
+<section>
+  <ul>
+    <li *ngFor="let house of searchHouses">
+      <p>Name: {{ house.name }}</p>
+      <p>MLS: {{ house.mls }}</p>
+      <p>City: {{ house.city }}</p>
+      <p>State: {{ house.state }}</p>
+      <p>Zipcode: {{ house.zipcode }}</p>
+      <p>Bedrooms: {{ house.bedrooms }}</p>
+      <p>Bathrooms: {{ house.bathrooms }}</p>
+      <p>Square Feet: {{ house.squareFeet }}</p>
+    </li>
+  </ul>
+</section>
