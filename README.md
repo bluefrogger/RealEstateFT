@@ -1,3 +1,7 @@
+Author: Alex Yoo on 2018/02/21
+Summary: Angular app with 5 components. There are 2 main pages for listing houses and searching houses. Url routing is for these 2 pages.   The other 3 components are for basic crud operations. This app also uses flat file data and models.
+Usage: Navigate to houses and search pages on the home page.
+
 # RealEstateFiveTalent
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.3.
