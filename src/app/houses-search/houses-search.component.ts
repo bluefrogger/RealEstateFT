@@ -17,37 +17,30 @@ export class HousesSearchComponent implements OnInit {
   }
 
   searchMls(mls: number): void {
-    console.log("filtering");
     this.searchHouses = this.houses.filter(house => house.mls == mls);
   }
 
   searchCity(city: string): void {
-    console.log("filtering");
     this.searchHouses = this.houses.filter(house => house.city == city);
   }
 
   searchState(state: string): void {
-    console.log("filtering");
     this.searchHouses = this.houses.filter(house => house.state == state);
   }
 
   searchZipcode(zipcode: number): void {
-    console.log("filtering");
     this.searchHouses = this.houses.filter(house => house.zipcode == zipcode);
   }
 
   searchBedrooms(bedrooms: number): void {
-    console.log("filtering");
     this.searchHouses = this.houses.filter(house => house.bedrooms == bedrooms);
   }
 
   searchBathrooms(bathrooms: number): void {
-    console.log("filtering");
     this.searchHouses = this.houses.filter(house => house.bathrooms == bathrooms);
   }
 
   searchSquareFeet(squareFeet: number): void {
-    console.log("filtering");
     this.searchHouses = this.houses.filter(house => house.squareFeet == squareFeet);
   }
 }
